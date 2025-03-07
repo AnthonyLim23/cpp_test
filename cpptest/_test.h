@@ -9,6 +9,7 @@ class stuff {
 		stuff(int X0, int X1);
 		~stuff();
 		int multi();
+		int diff();
 };
 
 #endif

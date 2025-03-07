@@ -1,12 +1,4 @@
-from libcpp cimport bool
-
-cdef extern from '_test.h':
-    int moo(bool &a)
-
-    cdef cppclass stuff:
-        stuff(int, int) except +
-        int x0, x1
-        int multi()
+from test_wrapper cimport moo, stuff
 
 cdef class Stuff:
     cdef stuff *c_stuff
@@ -19,6 +11,9 @@ cdef class Stuff:
 
     def multi(self):
         return self.c_stuff.multi()
+
+    def diff(self):
+        return self.c_stuff.diff()
 
 def boo(a):
     return moo(a)

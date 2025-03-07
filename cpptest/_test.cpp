@@ -14,3 +14,10 @@ stuff::~stuff(){}
 int stuff::multi(){
 	return x0*x1;
 }
+
+
+int stuff::diff(){
+	return x1-x0;
+}
+
+
