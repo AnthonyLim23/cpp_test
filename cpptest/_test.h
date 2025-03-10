@@ -1,5 +1,8 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
+#include <vector>
+//#include "hdf5.h"
+
 
 int moo(bool a);
 
@@ -10,6 +13,7 @@ class stuff {
 		~stuff();
 		int multi();
 		int diff();
+		int sum(std::vector<int> &a);
 };
 
 #endif

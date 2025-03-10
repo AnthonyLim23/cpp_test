@@ -15,5 +15,8 @@ cdef class Stuff:
     def diff(self):
         return self.c_stuff.diff()
 
+    def sum(self, a):
+        return self.c_stuff.sum(a)
+
 def boo(a):
     return moo(a)

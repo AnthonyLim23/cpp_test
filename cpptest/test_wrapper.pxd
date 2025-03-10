@@ -1,4 +1,5 @@
 from libcpp cimport bool
+from libcpp.vector cimport vector
 
 cdef extern from '_test.h':
     int moo(bool &a)
@@ -8,3 +9,4 @@ cdef extern from '_test.h':
         int x0, x1
         int multi()
         int diff()
+        int sum(vector[int] a)

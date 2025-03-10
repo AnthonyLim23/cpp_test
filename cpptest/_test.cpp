@@ -21,3 +21,10 @@ int stuff::diff(){
 }
 
 
+int stuff::sum(std::vector<int> &a){
+	int tot = 0;
+	for(int k=0; k<a.size(); k++){
+		tot += a[k];
+	}
+	return tot;
+}

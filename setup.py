@@ -10,6 +10,7 @@ PACKAGE_NAME = 'cpptest'
 extensions = [
               Extension(
                 'cpptest.test_wrapper',
+                #libraries=['hdf5'],
                 sources=['cpptest/test_wrapper.pyx', 'cpptest/_test.cpp'],
                 language='c++')
               ]
