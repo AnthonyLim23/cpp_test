@@ -10,7 +10,9 @@ PACKAGE_NAME = 'cpptest'
 extensions = [
               Extension(
                 'cpptest.test_wrapper',
-                #libraries=['hdf5'],
+                                libraries=['hdf5'],
+                library_dirs=['C:/Users/btr75544/AppData/Local/mambaforge/envs/MuonDataLib-dev/Library/lib/'],
+                include_dirs=['C:/Users/btr75544/AppData/Local/mambaforge/envs/MuonDataLib-dev/Library/include'],
                 sources=['cpptest/test_wrapper.pyx', 'cpptest/_test.cpp'],
                 language='c++')
               ]

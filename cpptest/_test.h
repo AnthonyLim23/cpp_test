@@ -1,7 +1,7 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 #include <vector>
-//#include "hdf5.h"
+#include "hdf5.h"
 
 
 int moo(bool a);
